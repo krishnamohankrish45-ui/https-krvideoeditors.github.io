@@ -1,115 +1,736 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KR VIDEO EDITORS | Vijayawada</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>KR VIDEO EDITORS | Professional Video Mixing & Editing Studio | Vijayawada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:#080808;color:#fff;font-family:'Poppins',sans-serif}
-.gold{color:#d6b36a}
-header{height:85px;padding:0 8%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #3d3020}
-.logo{font-family:'Cinzel',serif;color:#d6b36a;font-size:23px;letter-spacing:3px}
-nav a{color:#eee;text-decoration:none;margin-left:25px;font-size:12px;letter-spacing:1px}
-nav a:hover{color:#d6b36a}
-.hero{min-height:650px;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px;background:radial-gradient(ellipse at center,#302414 0%,#111 48%,#080808 78%)}
-.hero small{letter-spacing:6px;color:#d6b36a}
-.hero h1{font-family:'Cinzel',serif;font-size:clamp(40px,7vw,78px);font-weight:500;letter-spacing:5px;margin:25px 0}
-.hero p{color:#bbb;letter-spacing:2px;font-size:14px}
-.line{width:100px;height:2px;background:#d6b36a;margin:30px auto}
-.btn{display:inline-block;margin-top:25px;padding:14px 32px;border:1px solid #d6b36a;color:#d6b36a;text-decoration:none;letter-spacing:2px;font-size:12px}
-.btn:hover{background:#d6b36a;color:#080808}
-section{padding:90px 8%;text-align:center}
-.section-title{font-family:'Cinzel',serif;color:#d6b36a;font-size:32px;letter-spacing:3px;margin-bottom:20px}
-.desc{color:#aaa;line-height:2;max-width:700px;margin:0 auto}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:45px}
-.service{padding:40px 20px;border:1px solid #44351f;background:linear-gradient(145deg,#17130d,#090909)}
-.service h3{font-family:'Cinzel',serif;color:#d6b36a;font-size:18px;margin-bottom:15px}
-.service p{font-size:13px;color:#aaa;line-height:1.8}
-.team{background:#100e0a}
-.names{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;margin-top:45px}
-.name-card{padding:45px 15px;border:1px solid #80653b;background:linear-gradient(145deg,#211a10,#0b0b0b)}
-.name-card h3{font-family:'Cinzel',serif;color:#e4c27b;font-size:23px;letter-spacing:2px}
-.contact{background:#0e0c08}
-.contact p{color:#bbb;line-height:2;margin-top:15px}
-footer{padding:28px;text-align:center;border-top:1px solid #44351f;color:#888;font-size:12px}
-@media(max-width:600px){
-header{height:auto;padding:22px;display:block;text-align:center}
-.logo{font-size:19px}
-nav{margin-top:18px}
-nav a{margin:0 8px;font-size:10px}
-.hero{min-height:550px}
-section{padding:65px 7%}
+:root {
+  --gold: #d4af37;
+  --gold-light: #fbeea4;
+  --gold-dark: #8c6d23;
+  --gold-glow: rgba(212, 175, 55, 0.4);
+  --bg-deep: #050505;
+  --bg-card: rgba(16, 14, 10, 0.9);
+  --border-gold: rgba(212, 175, 55, 0.35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-deep);
+  color: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(5, 5, 5, 0.95);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--border-gold);
+  padding: 16px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+}
+
+nav a {
+  font-size: 12.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ccc;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--gold-light);
+  text-shadow: 0 0 10px var(--gold-glow);
+}
+
+.nav-phone {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: #000;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 1px;
+}
+
+/* Hero Section with Prominent Editor Photos */
+.hero {
+  position: relative;
+  min-height: 94vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  overflow: hidden;
+  background-color: var(--bg-deep);
+}
+
+/* Left & Right Photo Frames */
+.hero-photo-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 42%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  opacity: 0.85; /* స్పష్టంగా కనిపించేలా పెంచాము */
+  filter: contrast(1.1) brightness(0.9);
+}
+
+.hero-photo-wrap.left-side {
+  left: 0;
+}
+
+.hero-photo-wrap.left-side::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(5,5,5,0.1) 10%, rgba(5,5,5,0.85) 75%, #050505 100%);
+}
+
+.hero-photo-wrap.right-side {
+  right: 0;
+}
+
+.hero-photo-wrap.right-side::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to left, rgba(5,5,5,0.1) 10%, rgba(5,5,5,0.85) 75%, #050505 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 880px;
+  background: radial-gradient(circle, rgba(5,5,5,0.96) 0%, rgba(5,5,5,0.8) 75%, transparent 100%);
+  padding: 50px 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 8px 24px;
+  border: 1px solid var(--border-gold);
+  border-radius: 50px;
+  font-size: 11.5px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 20px;
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(34px, 6vw, 70px);
+  font-weight: 900;
+  line-height: 1.15;
+  background: linear-gradient(135deg, #ffffff 40%, var(--gold-light) 75%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+/* Master Video Editor Tagline */
+.hero p.tagline {
+  font-size: 19px;
+  color: var(--gold-light);
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.highlight-box {
+  background: rgba(18, 15, 10, 0.9);
+  border: 1px solid var(--border-gold);
+  padding: 18px 30px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.highlight-box p {
+  font-size: 14.5px;
+  color: #eee;
+  margin: 6px 0;
+  letter-spacing: 1px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Luxury Buttons */
+.btn-gold {
+  background: linear-gradient(135deg, #e6c875, #b8860b);
+  color: #0b0904;
+  padding: 15px 36px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 25px rgba(184, 134, 11, 0.4);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 35px var(--gold-glow);
+  color: #000;
+}
+
+.btn-outline {
+  padding: 15px 36px;
+  border: 1px solid var(--border-gold);
+  border-radius: 4px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-outline:hover {
+  background: rgba(212, 175, 55, 0.12);
+  border-color: var(--gold);
+}
+
+/* General Section */
+section {
+  padding: 90px 7%;
+  position: relative;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-head span {
+  font-size: 12px;
+  color: var(--gold);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(26px, 4vw, 40px);
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.gold-line {
+  width: 70px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 16px auto 0;
+}
+
+/* Team Showcase Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+}
+
+.team-card .avatar-box {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  padding: 4px;
+  background: rgba(212, 175, 55, 0.1);
+  overflow: hidden;
+}
+
+.team-card .avatar-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-card h3 {
+  font-family: 'Cinzel', serif;
+  color: var(--gold);
+  font-size: 24px;
+  margin-bottom: 8px;
+  letter-spacing: 1.5px;
+}
+
+.team-role {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.team-card p {
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Edit Suite Gear */
+.gear-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.gear-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: 8px;
+  padding: 35px 25px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.gear-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.18);
+}
+
+.gear-icon {
+  font-size: 40px;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.gear-card h3 {
+  font-family: 'Cinzel', serif;
+  color: var(--gold-light);
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.gear-card p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--gold);
+}
+
+.service-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-info {
+  padding: 24px;
+  text-align: left;
+}
+
+.service-info h3 {
+  font-family: 'Cinzel', serif;
+  color: var(--gold-light);
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.service-info p {
+  font-size: 13.5px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* Contact */
+.contact-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  padding: 55px 35px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contact-card h4 {
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.contact-phone-box {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.phone-link {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 34px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.whatsapp-link {
+  background: #25D366;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 34px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25D366;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  z-index: 10000;
+}
+
+footer {
+  padding: 28px 7%;
+  text-align: center;
+  background: #020202;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  color: #777;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .hero-photo-wrap {
+    width: 65%;
+    opacity: 0.4;
+  }
+  .services-grid, .gear-grid, .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .services-grid, .gear-grid, .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-phone-box {
+    flex-direction: column;
+  }
 }
 </style>
 </head>
 
 <body>
+
 <header>
-<div class="logo">KR VIDEO EDITORS</div>
-<nav>
-<a href="#home">HOME</a>
-<a href="#about">ABOUT</a>
-<a href="#services">SERVICES</a>
-<a href="#contact">CONTACT</a>
-</nav>
+  <div class="logo"><i class="fa-solid fa-film"></i> KR VIDEO EDITORS</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#team">Lead Editors</a>
+    <a href="#suite">Edit Suite</a>
+    <a href="#services">Editing Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav-phone" href="tel:+919912610744"><i class="fa-solid fa-phone"></i> 9912610744</a>
 </header>
 
+<!-- Dual Photo Hero Section with Custom Paths -->
 <div class="hero" id="home">
-<div>
-<small>WELCOME TO OUR CREATIVE WORLD</small>
-<h1>KR VIDEO<br><span class="gold">EDITORS</span></h1>
-<div class="line"></div>
-<p>CAPTURING MOMENTS · CREATING MEMORIES</p>
-<a class="btn" href="#contact">CONTACT US</a>
-</div>
+  <!-- Left Side Blended Photo -->
+  <div class="hero-photo-wrap left-side">
+    <img src="./my-photo1.JPG" alt="B. Krishna Mohan">
+  </div>
+  
+  <!-- Right Side Blended Photo -->
+  <div class="hero-photo-wrap right-side">
+    <img src="./my-photo2.jpeg" alt="B. Bhavani">
+  </div>
+  
+  <div class="hero-content">
+    <span class="hero-badge"><i class="fa-solid fa-sliders"></i> Master Video Mixing & Post-Production</span>
+    <h1>KR VIDEO EDITORS</h1>
+    <p class="tagline">PROFESSIONAL VIDEO EDITING • 4K MULTI-CAM MIXING • COLOR GRADING</p>
+    
+    <div class="highlight-box">
+      <p><i class="fa-solid fa-desktop" style="color:var(--gold);margin-right:8px;"></i> Timeline Multi-Cam Mixing, Cinematic Cuts & Teaser Reels</p>
+      <p><i class="fa-solid fa-wand-magic-sparkles" style="color:var(--gold);margin-right:8px;"></i> 3D Title Reveals, Karizma Album Design & Flex Layouts</p>
+    </div>
+    
+    <div class="hero-actions">
+      <a class="btn-gold" href="tel:+919912610744"><i class="fa-solid fa-phone"></i> Call: 9912610744</a>
+      <a class="btn-outline" href="https://wa.me/919912610744?text=Hi%20Krishna%20Garu,%20I%20have%20video%20editing%20work%20for%20KR%20Video%20Editors." target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+    </div>
+  </div>
 </div>
 
-<section id="about">
-<h2 class="section-title">ABOUT US</h2>
-<p class="desc">We turn your beautiful moments into timeless memories through creative photography, cinematic wedding films and professional video editing.</p>
+<!-- Team Showcase Section (Big Avatar Photos) -->
+<section id="team" style="background: #080705;">
+  <div class="section-head">
+    <span>The Masterminds</span>
+    <h2 class="heading">MEET OUR EDITING TEAM</h2>
+    <div class="gold-line"></div>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="avatar-box">
+        <img src="./my-photo1.JPG" alt="B. Krishna Mohan">
+      </div>
+      <h3>B. KRISHNA MOHAN</h3>
+      <span class="team-role">Chief Video Editor & Mixing Specialist</span>
+      <p>Specializing in 4K multi-camera timeline mixing, speed-ramping, EDIUS project workflows, cinematic color grading, and wedding teasers.</p>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar-box">
+        <img src="./my-photo2.jpeg" alt="B. Bhavani">
+      </div>
+      <h3>B. BHAVANI</h3>
+      <span class="team-role">Creative Director & Studio Management</span>
+      <p>Leading creative storytelling, album framing aesthetics, project timelines, client coordination, and post-production quality assurance.</p>
+    </div>
+  </div>
 </section>
 
-<section id="services">
-<h2 class="section-title">OUR SERVICES</h2>
-<p class="desc">Creative excellence in every frame.</p>
-<div class="services">
-<div class="service">
-<h3>Wedding Films</h3>
-<p>Beautiful cinematic wedding memories.</p>
-</div>
-<div class="service">
-<h3>Video Editing</h3>
-<p>Professional editing with creative storytelling.</p>
-</div>
-<div class="service">
-<h3>Photography</h3>
-<p>Capturing your precious moments beautifully.</p>
-</div>
-</div>
+<!-- Edit Suite & Production Gear -->
+<section id="suite">
+  <div class="section-head">
+    <span>Studio Engine</span>
+    <h2 class="heading">OUR EDITING SUITE & MIXING GEAR</h2>
+    <div class="gold-line"></div>
+  </div>
+  <div class="gear-grid">
+    <div class="gear-card">
+      <div class="gear-icon"><i class="fa-solid fa-sliders"></i></div>
+      <h3>Multi-Cam Video Mixing</h3>
+      <p>Specialized in real-time multicam project sync, fast-paced event cutting, and seamless transitions for grand Telugu weddings.</p>
+    </div>
+    <div class="gear-card">
+      <div class="gear-icon"><i class="fa-solid fa-palette"></i></div>
+      <h3>Cinematic Color Grading</h3>
+      <p>Transforming raw camera footage into royal golden tones, punchy haldi yellows, and filmic cinematic color palettes.</p>
+    </div>
+    <div class="gear-card">
+      <div class="gear-icon"><i class="fa-solid fa-cubes"></i></div>
+      <h3>3D Titles & VFX Reveals</h3>
+      <p>Custom 3D logo animation, bride & groom title reveals, invitation teasers, and modern flex typography layouts.</p>
+    </div>
+  </div>
 </section>
 
-<section class="team">
-<h2 class="section-title">MEET THE MINDS</h2>
-<div class="names">
-<div class="name-card"><h3>B. KRISHNA MOHAN</h3></div>
-<div class="name-card"><h3>B. BHAVANI</h3></div>
-</div>
+<!-- Editing Services Section -->
+<section id="services" style="background: #080705;">
+  <div class="section-head">
+    <span>Master Craft</span>
+    <h2 class="heading">POST-PRODUCTION SERVICES</h2>
+    <div class="gold-line"></div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=85" alt="Video Editing">
+      <div class="service-info">
+        <h3>Wedding Film Editing</h3>
+        <p>Full traditional event project cuts, highlights, cinematic trailers, and reel edits.</p>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=85" alt="Teaser Cut">
+      <div class="service-info">
+        <h3>Cinematic Teasers & Reels</h3>
+        <p>Trending Instagram reels, fast-paced beat sync cuts, and 4K ultra-wide teaser edits.</p>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=85" alt="3D Titles">
+      <div class="service-info">
+        <h3>3D Logo & Title Reveals</h3>
+        <p>Custom motion graphics, name reveal effects, and Telugu wedding invitations.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="contact" id="contact">
-<h2 class="section-title">VISIT OUR STUDIO</h2>
-<p><span class="gold">KR VIDEO EDITORS</span></p>
-<p>Eluru Road, Opposite Hotel Raj Towers,<br>Vijayawada, Andhra Pradesh.</p>
-<a class="btn" href="https://maps.google.com/?q=Hotel+Raj+Towers+Eluru+Road+Vijayawada">FIND OUR LOCATION</a>
+<!-- Contact Section -->
+<section id="contact">
+  <div class="section-head">
+    <span>Let's Collaborate</span>
+    <h2 class="heading">CONNECT WITH KR VIDEO EDITORS</h2>
+    <div class="gold-line"></div>
+  </div>
+  <div class="contact-card">
+    <h4>KR VIDEO EDITORS</h4>
+    <p style="color:#aaa;font-size:15px;line-height:1.8;">Eluru Road, Opposite Hotel Raj Towers, Vijayawada, Andhra Pradesh.<br>Serving Photographers, Studios & Direct Clients across Vijayawada, Guntur, Tenali & AP.</p>
+    
+    <div class="contact-phone-box">
+      <a class="phone-link" href="tel:+919912610744">
+        <i class="fa-solid fa-phone"></i> +91 9912610744
+      </a>
+      <a class="whatsapp-link" href="https://wa.me/919912610744?text=Hi%20Krishna%20Garu,%20I%20have%20video%20editing%20work%20for%20KR%20Video%20Editors." target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Chat
+      </a>
+    </div>
+
+    <a class="btn-outline" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Hotel+Raj+Towers+Eluru+Road+Vijayawada">
+      <i class="fa-solid fa-location-dot"></i> View On Google Maps
+    </a>
+  </div>
 </section>
+
+<!-- Floating WhatsApp Button -->
+<a class="whatsapp-float" href="https://wa.me/919912610744?text=Hi%20Krishna%20Garu,%20I%20am%20interested%20in%20KR%20Video%20Editing%20services." target="_blank" title="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 <footer>
-© 2026 KR VIDEO EDITORS · ALL RIGHTS RESERVED
+  © 2026 KR VIDEO EDITORS | Professional Video Mixing, Editing & High-End Post-Production.
 </footer>
+
 </body>
 </html>
