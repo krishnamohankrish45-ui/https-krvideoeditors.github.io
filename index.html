@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KR VIDEO EDITORS | B. Krishna Mohan | Pro Video Mixing Studio</title>
+<title>KR VIDEO EDITORS | Kalki RAM | Pro Video Mixing Studio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -119,7 +119,7 @@ nav a:hover {
   letter-spacing: 1px;
 }
 
-/* Luxury Hero Section with Transparent Blended Photos */
+/* Luxury Hero Section */
 .hero {
   position: relative;
   min-height: 94vh;
@@ -142,14 +142,15 @@ nav a:hover {
   overflow: hidden;
 }
 
+/* Photos paiki lepatam kosam object-position paiki set chesaamu */
 .hero-photo-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center 15%;
   display: block;
-  opacity: 0.82;
-  filter: contrast(1.15) brightness(0.9);
+  opacity: 0.88;
+  filter: contrast(1.15) brightness(0.95);
 }
 
 .hero-photo-wrap.left-side {
@@ -160,7 +161,7 @@ nav a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(5,5,5,0.08) 15%, rgba(5,5,5,0.85) 75%, #050505 100%);
+  background: linear-gradient(to right, rgba(5,5,5,0.05) 15%, rgba(5,5,5,0.85) 75%, #050505 100%);
 }
 
 .hero-photo-wrap.right-side {
@@ -171,7 +172,7 @@ nav a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to left, rgba(5,5,5,0.08) 15%, rgba(5,5,5,0.85) 75%, #050505 100%);
+  background: linear-gradient(to left, rgba(5,5,5,0.05) 15%, rgba(5,5,5,0.85) 75%, #050505 100%);
 }
 
 .hero-content {
@@ -220,7 +221,6 @@ nav a:hover {
   text-transform: uppercase;
 }
 
-/* Video Editor Quotation Box */
 .editor-quote-box {
   background: rgba(20, 16, 10, 0.9);
   border-left: 3px solid var(--gold);
@@ -349,7 +349,7 @@ section {
   margin: 16px auto 0;
 }
 
-/* Master Video Editor Profile with face.jpg and my photo.jpeg */
+/* Team Section */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -376,8 +376,8 @@ section {
 }
 
 .team-card .avatar-box {
-  width: 155px;
-  height: 155px;
+  width: 160px;
+  height: 160px;
   margin: 0 auto 20px;
   border-radius: 50%;
   border: 3px solid var(--gold);
@@ -391,6 +391,7 @@ section {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center top;
   display: block;
 }
 
@@ -643,16 +644,16 @@ footer {
   <a class="nav-phone" href="tel:+919912610744"><i class="fa-solid fa-phone"></i> 9912610744</a>
 </header>
 
-<!-- Dual Background Photo Hero Section (left 1.jpeg and right 1.JPG) -->
+<!-- Dual Background Photo Hero Section (Left & Right Swapped and Lifted Up) -->
 <div class="hero" id="home">
-  <!-- Left Side Background Photo: left 1.jpeg -->
+  <!-- Left Side: right 1.JPG (Paiki lepatam jarigindi) -->
   <div class="hero-photo-wrap left-side">
-    <img src="left 1.jpeg" alt="Background Left Theme">
+    <img src="right 1.JPG" alt="Theme Visual Left">
   </div>
   
-  <!-- Right Side Background Photo: right 1.JPG -->
+  <!-- Right Side: left 1.jpeg (Paiki lepatam jarigindi) -->
   <div class="hero-photo-wrap right-side">
-    <img src="right 1.JPG" alt="Background Right Theme">
+    <img src="left 1.jpeg" alt="Theme Visual Right">
   </div>
   
   <div class="hero-content">
@@ -678,7 +679,7 @@ footer {
   </div>
 </div>
 
-<!-- Team Showcase Section (face.jpg and my photo.jpeg) -->
+<!-- Team Showcase Section -->
 <section id="team" style="background: #080705;">
   <div class="section-head">
     <span>The Masterminds</span>
@@ -732,7 +733,7 @@ footer {
   </div>
 </section>
 
-<!-- Events Portfolio (Half Saree, Birthday, Haldi, Muhurtham) -->
+<!-- Events Portfolio (Half Saree, Birthday with Baby Girl, Haldi, Muhurtham) -->
 <section id="gallery" style="background: #080705;">
   <div class="section-head">
     <span>Specialized Events Portfolio</span>
@@ -740,22 +741,25 @@ footer {
     <div class="gold-line"></div>
   </div>
   <div class="gallery-grid">
+    <!-- Half Saree Function Edit (Clear Traditional Image Added) -->
     <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=85" alt="Half Saree Ceremony">
+      <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=85" alt="Half Saree Function">
       <div class="gallery-overlay">
         <h4>Half Saree Ceremony (లంగ వోణి వేడుక)</h4>
         <span>Traditional Pattu Voni Visuals, Floral Glow & Teaser Edits</span>
       </div>
     </div>
     
+    <!-- Birthday Celebration Edit (Cute Baby Girl Photo Added) -->
     <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=85" alt="Birthday Celebration">
+      <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=85" alt="Baby Girl Birthday Celebration">
       <div class="gallery-overlay">
         <h4>Grand Birthday Celebrations</h4>
-        <span>Vibrant Lighting, Fast Beat Cuts & Anime Aesthetic Effects</span>
+        <span>Cute Baby Girl Highlights, Cake Smash & Filmic Fast Cuts</span>
       </div>
     </div>
 
+    <!-- Haldi Ceremony Edit -->
     <div class="gallery-item">
       <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=85" alt="Haldi Celebration">
       <div class="gallery-overlay">
@@ -764,6 +768,7 @@ footer {
       </div>
     </div>
 
+    <!-- Sacred Telugu Wedding Muhurtham -->
     <div class="gallery-item">
       <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=800&q=85" alt="Sacred Muhurtham">
       <div class="gallery-overlay">
@@ -772,6 +777,7 @@ footer {
       </div>
     </div>
 
+    <!-- Pre-Wedding Shoot Edit -->
     <div class="gallery-item">
       <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=85" alt="Pre-Wedding Romance">
       <div class="gallery-overlay">
@@ -780,6 +786,7 @@ footer {
       </div>
     </div>
 
+    <!-- Grand Reception Highlights -->
     <div class="gallery-item">
       <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=85" alt="Grand Reception Stage">
       <div class="gallery-overlay">
