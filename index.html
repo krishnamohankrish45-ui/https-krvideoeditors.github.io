@@ -63,9 +63,9 @@ header {
 
 .logo {
   font-family: 'Cinzel', serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
   -webkit-background-clip: text;
   background-clip: text;
@@ -84,16 +84,16 @@ header {
   color: var(--gold-light);
   text-transform: uppercase;
   margin-top: 3px;
-  padding-left: 28px;
+  padding-left: 26px;
 }
 
 nav {
   display: flex;
-  gap: 22px;
+  gap: 20px;
 }
 
 nav a {
-  font-size: 12.5px;
+  font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ccc;
@@ -112,7 +112,7 @@ nav a:hover {
   padding: 8px 18px;
   border-radius: 30px;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 12.5px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -124,6 +124,7 @@ nav a:hover {
   position: relative;
   min-height: 94vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -132,12 +133,12 @@ nav a:hover {
   background-color: var(--bg-deep);
 }
 
-/* Photos screen edges ki direct set chesaamu */
+/* Desktop Background Wrappers */
 .hero-photo-wrap {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 30%;
+  width: 32%;
   z-index: 1;
   pointer-events: none;
   overflow: hidden;
@@ -182,14 +183,42 @@ nav a:hover {
   background: linear-gradient(to left, transparent 50%, rgba(5,5,5,0.85) 90%, #050505 100%);
 }
 
-/* Center Content Box ni compact chesaamu */
+/* Mobile Dual Showcase Frame (డెస్క్‌టాప్‌లో దాగి ఉంటుంది, మొబైల్‌లో మాత్రమే కనిపిస్తుంది) */
+.mobile-hero-photos {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  z-index: 4;
+}
+
+.mobile-photo-box {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  overflow: hidden;
+  box-shadow: 0 0 20px var(--gold-glow);
+  background: #000;
+}
+
+.mobile-photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* Center Content Box */
 .hero-content {
   position: relative;
   z-index: 3;
   max-width: 640px;
-  background: rgba(5, 5, 5, 0.75);
+  background: rgba(5, 5, 5, 0.78);
   backdrop-filter: blur(8px);
-  padding: 40px 24px;
+  padding: 38px 22px;
   border-radius: 16px;
   border: 1px solid rgba(212, 175, 55, 0.3);
   box-shadow: 0 10px 40px rgba(0,0,0,0.8);
@@ -197,20 +226,20 @@ nav a:hover {
 
 .hero-badge {
   display: inline-block;
-  padding: 6px 20px;
+  padding: 6px 18px;
   border: 1px solid var(--border-gold);
   border-radius: 50px;
   font-size: 11px;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--gold-light);
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   background: rgba(212, 175, 55, 0.1);
 }
 
 .hero h1 {
   font-family: 'Cinzel', serif;
-  font-size: clamp(28px, 4.5vw, 54px);
+  font-size: clamp(26px, 5.5vw, 52px);
   font-weight: 900;
   line-height: 1.15;
   background: linear-gradient(135deg, #ffffff 35%, var(--gold-light) 75%, var(--gold) 100%);
@@ -222,10 +251,10 @@ nav a:hover {
 }
 
 .hero p.tagline {
-  font-size: 14px;
+  font-size: 13.5px;
   color: var(--gold-light);
   letter-spacing: 1.5px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -234,14 +263,14 @@ nav a:hover {
   background: rgba(20, 16, 10, 0.85);
   border-left: 2px solid var(--gold);
   border-right: 2px solid var(--gold);
-  padding: 12px 18px;
-  margin: 0 auto 20px;
-  max-width: 540px;
+  padding: 12px 16px;
+  margin: 0 auto 18px;
+  max-width: 520px;
   border-radius: 6px;
 }
 
 .editor-quote-box p {
-  font-size: 13.5px;
+  font-size: 13px;
   font-style: italic;
   color: #fff;
   line-height: 1.5;
@@ -250,9 +279,9 @@ nav a:hover {
 .editor-quote-box span {
   display: block;
   font-style: normal;
-  font-size: 11px;
+  font-size: 10.5px;
   color: var(--gold-light);
-  margin-top: 6px;
+  margin-top: 5px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 700;
@@ -261,14 +290,14 @@ nav a:hover {
 .highlight-box {
   background: rgba(18, 15, 10, 0.85);
   border: 1px solid var(--border-gold);
-  padding: 14px 20px;
+  padding: 12px 18px;
   border-radius: 8px;
   display: inline-block;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .highlight-box p {
-  font-size: 13px;
+  font-size: 12.5px;
   color: #eee;
   margin: 4px 0;
   letter-spacing: 0.5px;
@@ -276,7 +305,7 @@ nav a:hover {
 
 .hero-actions {
   display: flex;
-  gap: 14px;
+  gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -284,10 +313,10 @@ nav a:hover {
 .btn-gold {
   background: linear-gradient(135deg, #e6c875, #b8860b);
   color: #0b0904;
-  padding: 12px 28px;
+  padding: 12px 26px;
   border-radius: 4px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11.5px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   box-shadow: 0 4px 20px rgba(184, 134, 11, 0.4);
@@ -297,17 +326,11 @@ nav a:hover {
   gap: 8px;
 }
 
-.btn-gold:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 28px var(--gold-glow);
-  color: #000;
-}
-
 .btn-outline {
-  padding: 12px 28px;
+  padding: 12px 26px;
   border: 1px solid var(--border-gold);
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 11.5px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--gold-light);
@@ -317,26 +340,21 @@ nav a:hover {
   gap: 8px;
 }
 
-.btn-outline:hover {
-  background: rgba(212, 175, 55, 0.12);
-  border-color: var(--gold);
-}
-
 /* Sections */
 section {
-  padding: 85px 7%;
+  padding: 75px 7%;
   position: relative;
 }
 
 .section-head {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .section-head span {
   font-size: 11.5px;
   color: var(--gold);
-  letter-spacing: 4px;
+  letter-spacing: 3.5px;
   text-transform: uppercase;
   display: block;
   margin-bottom: 8px;
@@ -344,24 +362,24 @@ section {
 
 .heading {
   font-family: 'Cinzel', serif;
-  font-size: clamp(24px, 3.8vw, 38px);
+  font-size: clamp(22px, 3.8vw, 36px);
   color: #fff;
   letter-spacing: 1.5px;
 }
 
 .gold-line {
-  width: 65px;
+  width: 60px;
   height: 2px;
   background: linear-gradient(to right, transparent, var(--gold), transparent);
-  margin: 14px auto 0;
+  margin: 12px auto 0;
 }
 
 /* Team Section */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  max-width: 920px;
+  gap: 30px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -369,23 +387,17 @@ section {
   background: var(--bg-card);
   border: 1px solid var(--border-gold);
   border-radius: 12px;
-  padding: 35px 25px;
+  padding: 30px 20px;
   text-align: center;
   position: relative;
   transition: all 0.4s ease;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-.team-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--gold);
-  box-shadow: 0 14px 35px rgba(212, 175, 55, 0.2);
-}
-
 .team-card .avatar-box {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 18px;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 16px;
   border-radius: 50%;
   border: 3px solid var(--gold);
   padding: 4px;
@@ -405,15 +417,15 @@ section {
 .team-card h3 {
   font-family: 'Cinzel', serif;
   color: var(--gold);
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 6px;
   letter-spacing: 1.2px;
 }
 
 .team-role {
   display: inline-block;
-  font-size: 11.5px;
-  letter-spacing: 2px;
+  font-size: 11px;
+  letter-spacing: 1.8px;
   color: var(--gold-light);
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -425,48 +437,42 @@ section {
 
 .team-card p {
   color: #bbb;
-  font-size: 13.5px;
-  line-height: 1.65;
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 /* Edit Suite Gear */
 .gear-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+  gap: 20px;
 }
 
 .gear-card {
   background: var(--bg-card);
   border: 1px solid var(--border-gold);
   border-radius: 8px;
-  padding: 30px 22px;
+  padding: 28px 20px;
   text-align: center;
   transition: all 0.4s ease;
 }
 
-.gear-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--gold);
-  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.18);
-}
-
 .gear-icon {
-  font-size: 36px;
+  font-size: 34px;
   color: var(--gold);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .gear-card h3 {
   font-family: 'Cinzel', serif;
   color: var(--gold-light);
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 17px;
+  margin-bottom: 8px;
 }
 
 .gear-card p {
   color: #aaa;
-  font-size: 13.5px;
+  font-size: 13px;
   line-height: 1.6;
 }
 
@@ -474,12 +480,12 @@ section {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 18px;
 }
 
 .gallery-item {
   position: relative;
-  height: 310px;
+  height: 290px;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid rgba(212, 175, 55, 0.28);
@@ -490,7 +496,6 @@ section {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .gallery-overlay {
@@ -500,26 +505,21 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 18px;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .gallery-overlay h4 {
   font-family: 'Cinzel', serif;
-  font-size: 17px;
+  font-size: 16px;
   color: var(--gold-light);
   margin-bottom: 4px;
 }
 
 .gallery-overlay span {
-  font-size: 11.5px;
+  font-size: 11px;
   color: #ddd;
-  letter-spacing: 1px;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.08);
 }
 
 .gallery-item:hover .gallery-overlay {
@@ -528,101 +528,112 @@ section {
 
 /* Contact */
 .contact-card {
-  max-width: 760px;
+  max-width: 740px;
   margin: 0 auto;
   background: var(--bg-card);
   border: 1px solid var(--border-gold);
-  padding: 45px 30px;
+  padding: 40px 24px;
   border-radius: 12px;
   text-align: center;
 }
 
 .contact-card h4 {
   font-family: 'Cinzel', serif;
-  font-size: 24px;
+  font-size: 22px;
   color: var(--gold);
   margin-bottom: 10px;
 }
 
 .contact-phone-box {
-  margin: 26px 0;
+  margin: 24px 0;
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
 .phone-link {
   background: linear-gradient(135deg, var(--gold), var(--gold-dark));
   color: #000;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
-  padding: 14px 30px;
+  padding: 12px 26px;
   border-radius: 50px;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .whatsapp-link {
   background: #25D366;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
-  padding: 14px 30px;
+  padding: 12px 26px;
   border-radius: 50px;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .whatsapp-float {
   position: fixed;
-  bottom: 26px;
-  right: 26px;
+  bottom: 22px;
+  right: 22px;
   background: #25D366;
   color: #fff;
-  width: 56px;
-  height: 56px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 28px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   z-index: 10000;
 }
 
 footer {
-  padding: 24px 7%;
+  padding: 22px 7%;
   text-align: center;
   background: #020202;
   border-top: 1px solid rgba(212, 175, 55, 0.2);
   color: #777;
-  font-size: 11.5px;
-  letter-spacing: 1px;
+  font-size: 11px;
 }
 
-@media (max-width: 992px) {
+/* Responsive Rules for Mobile Devices */
+@media (max-width: 850px) {
+  /* Hide overlapping background wrappers on narrow mobile screens */
   .hero-photo-wrap {
-    opacity: 0.35;
-    width: 45%;
+    display: none;
   }
-}
-
-@media (max-width: 650px) {
+  
+  /* Show prominent dual photo badges right above the hero text */
+  .mobile-hero-photos {
+    display: flex;
+  }
+  
+  .hero-content {
+    width: 100%;
+    padding: 28px 16px;
+  }
+  
   header {
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
   }
+  
   nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
-  .services-grid, .gallery-grid, .gear-grid, .team-grid {
+  
+  .gallery-grid, .gear-grid, .team-grid {
     grid-template-columns: 1fr;
   }
+  
   .contact-phone-box {
     flex-direction: column;
   }
@@ -648,16 +659,26 @@ footer {
   <a class="nav-phone" href="tel:+919912610744"><i class="fa-solid fa-phone"></i> 9912610744</a>
 </header>
 
-<!-- Dual Background Photo Hero Section (Clear Edges, No Box Overlap) -->
+<!-- Dual Photo Hero Section -->
 <div class="hero" id="home">
-  <!-- Left Side: right 1.JPG (Extreme Left) -->
+  <!-- Desktop Left Background Photo -->
   <div class="hero-photo-wrap left-side">
     <img src="right 1.JPG" alt="Theme Visual Left">
   </div>
   
-  <!-- Right Side: left 1.jpeg (Extreme Right) -->
+  <!-- Desktop Right Background Photo -->
   <div class="hero-photo-wrap right-side">
     <img src="left 1.jpeg" alt="Theme Visual Right">
+  </div>
+  
+  <!-- Mobile Dual Photos Display (మొబైల్‌లో టైటిల్ పైభాగంలో స్పష్టంగా కనిపించేలా) -->
+  <div class="mobile-hero-photos">
+    <div class="mobile-photo-box">
+      <img src="right 1.JPG" alt="B. Krishna Mohan Visual">
+    </div>
+    <div class="mobile-photo-box">
+      <img src="left 1.jpeg" alt="Creative Studio Visual">
+    </div>
   </div>
   
   <div class="hero-content">
@@ -809,7 +830,7 @@ footer {
   </div>
   <div class="contact-card">
     <h4>KR VIDEO EDITORS</h4>
-    <p style="color:#aaa;font-size:15px;line-height:1.8;">Eluru Road, Opposite Hotel Raj Towers, Vijayawada, Andhra Pradesh.<br>Available for Photographers, Studios, Event Organizers & Direct Clients across Vijayawada, Guntur, Tenali & AP/Telangana.</p>
+    <p style="color:#aaa;font-size:14.5px;line-height:1.7;">Eluru Road, Opposite Hotel Raj Towers, Vijayawada, Andhra Pradesh.<br>Available for Photographers, Studios, Event Organizers & Direct Clients across Vijayawada, Guntur, Tenali & AP/Telangana.</p>
     
     <div class="contact-phone-box">
       <a class="phone-link" href="tel:+919912610744">
