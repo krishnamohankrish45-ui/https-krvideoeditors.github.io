@@ -1,31 +1,115 @@
 
-<section class="about" id="about">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KR VIDEO EDITORS | Vijayawada</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<h2>MEET OUR TEAM</h2>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#080808;color:#fff;font-family:'Poppins',sans-serif}
+.gold{color:#d6b36a}
+header{height:85px;padding:0 8%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #3d3020}
+.logo{font-family:'Cinzel',serif;color:#d6b36a;font-size:23px;letter-spacing:3px}
+nav a{color:#eee;text-decoration:none;margin-left:25px;font-size:12px;letter-spacing:1px}
+nav a:hover{color:#d6b36a}
+.hero{min-height:650px;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px;background:radial-gradient(ellipse at center,#302414 0%,#111 48%,#080808 78%)}
+.hero small{letter-spacing:6px;color:#d6b36a}
+.hero h1{font-family:'Cinzel',serif;font-size:clamp(40px,7vw,78px);font-weight:500;letter-spacing:5px;margin:25px 0}
+.hero p{color:#bbb;letter-spacing:2px;font-size:14px}
+.line{width:100px;height:2px;background:#d6b36a;margin:30px auto}
+.btn{display:inline-block;margin-top:25px;padding:14px 32px;border:1px solid #d6b36a;color:#d6b36a;text-decoration:none;letter-spacing:2px;font-size:12px}
+.btn:hover{background:#d6b36a;color:#080808}
+section{padding:90px 8%;text-align:center}
+.section-title{font-family:'Cinzel',serif;color:#d6b36a;font-size:32px;letter-spacing:3px;margin-bottom:20px}
+.desc{color:#aaa;line-height:2;max-width:700px;margin:0 auto}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:45px}
+.service{padding:40px 20px;border:1px solid #44351f;background:linear-gradient(145deg,#17130d,#090909)}
+.service h3{font-family:'Cinzel',serif;color:#d6b36a;font-size:18px;margin-bottom:15px}
+.service p{font-size:13px;color:#aaa;line-height:1.8}
+.team{background:#100e0a}
+.names{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;margin-top:45px}
+.name-card{padding:45px 15px;border:1px solid #80653b;background:linear-gradient(145deg,#211a10,#0b0b0b)}
+.name-card h3{font-family:'Cinzel',serif;color:#e4c27b;font-size:23px;letter-spacing:2px}
+.contact{background:#0e0c08}
+.contact p{color:#bbb;line-height:2;margin-top:15px}
+footer{padding:28px;text-align:center;border-top:1px solid #44351f;color:#888;font-size:12px}
+@media(max-width:600px){
+header{height:auto;padding:22px;display:block;text-align:center}
+.logo{font-size:19px}
+nav{margin-top:18px}
+nav a{margin:0 8px;font-size:10px}
+.hero{min-height:550px}
+section{padding:65px 7%}
+}
+</style>
+</head>
 
-<div class="services">
+<body>
+<header>
+<div class="logo">KR VIDEO EDITORS</div>
+<nav>
+<a href="#home">HOME</a>
+<a href="#about">ABOUT</a>
+<a href="#services">SERVICES</a>
+<a href="#contact">CONTACT</a>
+</nav>
+</header>
 
-<div class="service">
-<h3 style="font-size:28px;letter-spacing:2px;">
-B. KRISHNA MOHAN
-</h3>
+<div class="hero" id="home">
+<div>
+<small>WELCOME TO OUR CREATIVE WORLD</small>
+<h1>KR VIDEO<br><span class="gold">EDITORS</span></h1>
+<div class="line"></div>
+<p>CAPTURING MOMENTS · CREATING MEMORIES</p>
+<a class="btn" href="#contact">CONTACT US</a>
+</div>
 </div>
 
-<div class="service">
-<h3 style="font-size:28px;letter-spacing:2px;">
-B. BHAVANI
-</h3>
-</div>
-
-</div>
-
-<h2 style="margin-top:60px;">OUR STUDIO</h2>
-
-<p>
-KR VIDEO EDITORS<br>
-Eluru Road, Opposite Hotel Raj Towers,<br>
-Vijayawada, Andhra Pradesh.
-</p>
-
+<section id="about">
+<h2 class="section-title">ABOUT US</h2>
+<p class="desc">We turn your beautiful moments into timeless memories through creative photography, cinematic wedding films and professional video editing.</p>
 </section>
 
+<section id="services">
+<h2 class="section-title">OUR SERVICES</h2>
+<p class="desc">Creative excellence in every frame.</p>
+<div class="services">
+<div class="service">
+<h3>Wedding Films</h3>
+<p>Beautiful cinematic wedding memories.</p>
+</div>
+<div class="service">
+<h3>Video Editing</h3>
+<p>Professional editing with creative storytelling.</p>
+</div>
+<div class="service">
+<h3>Photography</h3>
+<p>Capturing your precious moments beautifully.</p>
+</div>
+</div>
+</section>
+
+<section class="team">
+<h2 class="section-title">MEET THE MINDS</h2>
+<div class="names">
+<div class="name-card"><h3>B. KRISHNA MOHAN</h3></div>
+<div class="name-card"><h3>B. BHAVANI</h3></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="section-title">VISIT OUR STUDIO</h2>
+<p><span class="gold">KR VIDEO EDITORS</span></p>
+<p>Eluru Road, Opposite Hotel Raj Towers,<br>Vijayawada, Andhra Pradesh.</p>
+<a class="btn" href="https://maps.google.com/?q=Hotel+Raj+Towers+Eluru+Road+Vijayawada">FIND OUR LOCATION</a>
+</section>
+
+<footer>
+© 2026 KR VIDEO EDITORS · ALL RIGHTS RESERVED
+</footer>
+</body>
+</html>
