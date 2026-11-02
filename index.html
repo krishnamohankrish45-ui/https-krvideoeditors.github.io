@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KR VIDEO EDITORS | Professional Video Mixing & Editing Studio | Vijayawada</title>
+<title>KR VIDEO EDITORS | Kalki RAM | Krishna Video Editors</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
@@ -14,9 +14,9 @@
   --gold: #d4af37;
   --gold-light: #fbeea4;
   --gold-dark: #8c6d23;
-  --gold-glow: rgba(212, 175, 55, 0.4);
+  --gold-glow: rgba(212, 175, 55, 0.45);
   --bg-deep: #050505;
-  --bg-card: rgba(16, 14, 10, 0.9);
+  --bg-card: rgba(16, 14, 10, 0.92);
   --border-gold: rgba(212, 175, 55, 0.35);
 }
 
@@ -42,31 +42,50 @@ a {
   color: inherit;
 }
 
-/* Header */
+/* Header with KR EDITORS & Kalki RAM Sub-line */
 header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(5, 5, 5, 0.95);
+  background: rgba(5, 5, 5, 0.96);
   backdrop-filter: blur(15px);
   border-bottom: 1px solid var(--border-gold);
-  padding: 16px 6%;
+  padding: 14px 6%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.brand-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo {
   font-family: 'Cinzel', serif;
   font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-weight: 900;
+  letter-spacing: 2.5px;
   background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  line-height: 1.1;
+}
+
+.sub-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  margin-top: 3px;
+  padding-left: 28px;
+  opacity: 0.9;
 }
 
 nav {
@@ -101,7 +120,7 @@ nav a:hover {
   letter-spacing: 1px;
 }
 
-/* Hero Section with Prominent Editor Photos */
+/* Luxury Hero Section with Dual Background Blended Photos */
 .hero {
   position: relative;
   min-height: 94vh;
@@ -109,17 +128,16 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
   overflow: hidden;
   background-color: var(--bg-deep);
 }
 
-/* Left & Right Photo Frames */
 .hero-photo-wrap {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 42%;
+  width: 48%;
   z-index: 1;
   pointer-events: none;
   overflow: hidden;
@@ -131,8 +149,8 @@ nav a:hover {
   object-fit: cover;
   object-position: top center;
   display: block;
-  opacity: 0.85; /* స్పష్టంగా కనిపించేలా పెంచాము */
-  filter: contrast(1.1) brightness(0.9);
+  opacity: 0.9;
+  filter: contrast(1.15) brightness(0.92);
 }
 
 .hero-photo-wrap.left-side {
@@ -143,7 +161,7 @@ nav a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(5,5,5,0.1) 10%, rgba(5,5,5,0.85) 75%, #050505 100%);
+  background: linear-gradient(to right, rgba(5,5,5,0.08) 15%, rgba(5,5,5,0.85) 75%, #050505 100%);
 }
 
 .hero-photo-wrap.right-side {
@@ -154,18 +172,18 @@ nav a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to left, rgba(5,5,5,0.1) 10%, rgba(5,5,5,0.85) 75%, #050505 100%);
+  background: linear-gradient(to left, rgba(5,5,5,0.08) 15%, rgba(5,5,5,0.85) 75%, #050505 100%);
 }
 
 .hero-content {
   position: relative;
   z-index: 3;
-  max-width: 880px;
-  background: radial-gradient(circle, rgba(5,5,5,0.96) 0%, rgba(5,5,5,0.8) 75%, transparent 100%);
-  padding: 50px 30px;
+  max-width: 920px;
+  background: radial-gradient(circle, rgba(5,5,5,0.96) 0%, rgba(5,5,5,0.82) 75%, transparent 100%);
+  padding: 55px 30px;
   border-radius: 16px;
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 10px 45px rgba(0,0,0,0.9);
 }
 
 .hero-badge {
@@ -177,46 +195,75 @@ nav a:hover {
   letter-spacing: 3.5px;
   text-transform: uppercase;
   color: var(--gold-light);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   background: rgba(212, 175, 55, 0.1);
 }
 
 .hero h1 {
   font-family: 'Cinzel', serif;
-  font-size: clamp(34px, 6vw, 70px);
+  font-size: clamp(34px, 6.5vw, 72px);
   font-weight: 900;
   line-height: 1.15;
-  background: linear-gradient(135deg, #ffffff 40%, var(--gold-light) 75%, var(--gold) 100%);
+  background: linear-gradient(135deg, #ffffff 35%, var(--gold-light) 75%, var(--gold) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   letter-spacing: 2px;
 }
 
-/* Master Video Editor Tagline */
 .hero p.tagline {
-  font-size: 19px;
+  font-size: 17px;
   color: var(--gold-light);
   letter-spacing: 2px;
-  margin-bottom: 24px;
-  font-weight: 600;
+  margin-bottom: 22px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
+/* Video Editor Quotation Box */
+.editor-quote-box {
+  background: rgba(20, 16, 10, 0.9);
+  border-left: 3px solid var(--gold);
+  border-right: 3px solid var(--gold);
+  padding: 16px 26px;
+  margin: 0 auto 28px;
+  max-width: 760px;
+  border-radius: 6px;
+}
+
+.editor-quote-box p {
+  font-size: 15px;
+  font-style: italic;
+  color: #fff;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.editor-quote-box span {
+  display: block;
+  font-style: normal;
+  font-size: 12px;
+  color: var(--gold-light);
+  margin-top: 8px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .highlight-box {
-  background: rgba(18, 15, 10, 0.9);
+  background: rgba(18, 15, 10, 0.92);
   border: 1px solid var(--border-gold);
-  padding: 18px 30px;
+  padding: 16px 30px;
   border-radius: 8px;
   display: inline-block;
   margin-bottom: 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 .highlight-box p {
-  font-size: 14.5px;
+  font-size: 14px;
   color: #eee;
-  margin: 6px 0;
+  margin: 5px 0;
   letter-spacing: 1px;
 }
 
@@ -269,7 +316,7 @@ nav a:hover {
   border-color: var(--gold);
 }
 
-/* General Section */
+/* Section Common */
 section {
   padding: 90px 7%;
   position: relative;
@@ -303,7 +350,7 @@ section {
   margin: 16px auto 0;
 }
 
-/* Team Showcase Section */
+/* Master Video Editor Profile */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -416,49 +463,60 @@ section {
   line-height: 1.7;
 }
 
-/* Services */
-.services-grid {
+/* Event Gallery (Anime & Cinematic Visual Aesthetics) */
+.gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 22px;
 }
 
-.service-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-gold);
-  border-radius: 8px;
+.gallery-item {
+  position: relative;
+  height: 330px;
+  border-radius: 10px;
   overflow: hidden;
-  transition: all 0.4s ease;
+  border: 1px solid rgba(212, 175, 55, 0.28);
 }
 
-.service-card:hover {
-  transform: translateY(-7px);
-  border-color: var(--gold);
-}
-
-.service-card img {
+.gallery-item img {
   width: 100%;
-  height: 240px;
+  height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.service-info {
-  padding: 24px;
-  text-align: left;
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 22px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.service-info h3 {
+.gallery-overlay h4 {
   font-family: 'Cinzel', serif;
+  font-size: 18px;
   color: var(--gold-light);
-  font-size: 19px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
-.service-info p {
-  font-size: 13.5px;
-  color: #aaa;
-  line-height: 1.6;
+.gallery-overlay span {
+  font-size: 12px;
+  color: #ddd;
+  letter-spacing: 1px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
 }
 
 /* Contact */
@@ -541,9 +599,9 @@ footer {
 @media (max-width: 900px) {
   .hero-photo-wrap {
     width: 65%;
-    opacity: 0.4;
+    opacity: 0.42;
   }
-  .services-grid, .gear-grid, .team-grid {
+  .gallery-grid, .gear-grid, .team-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -558,7 +616,7 @@ footer {
     justify-content: center;
     gap: 12px;
   }
-  .services-grid, .gear-grid, .team-grid {
+  .gallery-grid, .gear-grid, .team-grid {
     grid-template-columns: 1fr;
   }
   .contact-phone-box {
@@ -570,48 +628,58 @@ footer {
 
 <body>
 
+<!-- Header with KR EDITORS & Kalki RAM -->
 <header>
-  <div class="logo"><i class="fa-solid fa-film"></i> KR VIDEO EDITORS</div>
+  <div class="brand-wrap">
+    <div class="logo"><i class="fa-solid fa-film"></i> KR VIDEO EDITORS</div>
+    <div class="sub-brand">Kalki RAM</div>
+  </div>
   <nav>
     <a href="#home">Home</a>
     <a href="#team">Lead Editors</a>
-    <a href="#suite">Edit Suite</a>
-    <a href="#services">Editing Services</a>
+    <a href="#suite">Mixing Suite</a>
+    <a href="#gallery">Events Portfolio</a>
     <a href="#contact">Contact</a>
   </nav>
   <a class="nav-phone" href="tel:+919912610744"><i class="fa-solid fa-phone"></i> 9912610744</a>
 </header>
 
-<!-- Dual Photo Hero Section with Custom Paths -->
+<!-- Dual Background Photo Hero Section (Krishna Mohan First Highlight) -->
 <div class="hero" id="home">
-  <!-- Left Side Blended Photo -->
+  <!-- Left Side Photo: B. Krishna Mohan -->
   <div class="hero-photo-wrap left-side">
-    <img src="./my-photo1.JPG" alt="B. Krishna Mohan">
+    <img src="my-photo1.JPG" alt="B. Krishna Mohan">
   </div>
   
-  <!-- Right Side Blended Photo -->
+  <!-- Right Side Photo: Creative Studio / Bhavani -->
   <div class="hero-photo-wrap right-side">
-    <img src="./my-photo2.jpeg" alt="B. Bhavani">
+    <img src="my-photo2.jpeg" alt="B. Bhavani">
   </div>
   
   <div class="hero-content">
     <span class="hero-badge"><i class="fa-solid fa-sliders"></i> Master Video Mixing & Post-Production</span>
-    <h1>KR VIDEO EDITORS</h1>
-    <p class="tagline">PROFESSIONAL VIDEO EDITING • 4K MULTI-CAM MIXING • COLOR GRADING</p>
+    <h1>KRISHNA VIDEO EDITORS</h1>
+    <p class="tagline">CRAFTED BY B. KRISHNA MOHAN | THE TIMELINE ALCHEMIST</p>
+    
+    <!-- Video Editor Punch Quotation -->
+    <div class="editor-quote-box">
+      <p>"Anyone can shoot a video, but it takes a master editor's vision to craft pure cinema out of raw moments."</p>
+      <span>— B. Krishna Mohan (Kalki RAM)</span>
+    </div>
     
     <div class="highlight-box">
-      <p><i class="fa-solid fa-desktop" style="color:var(--gold);margin-right:8px;"></i> Timeline Multi-Cam Mixing, Cinematic Cuts & Teaser Reels</p>
-      <p><i class="fa-solid fa-wand-magic-sparkles" style="color:var(--gold);margin-right:8px;"></i> 3D Title Reveals, Karizma Album Design & Flex Layouts</p>
+      <p><i class="fa-solid fa-desktop" style="color:var(--gold);margin-right:8px;"></i> 4K Multi-Cam Project Mixing, EDIUS Timeline Cuts & Cinematic Color Grading</p>
+      <p><i class="fa-solid fa-wand-magic-sparkles" style="color:var(--gold);margin-right:8px;"></i> Telugu Wedding Teasers, Half Saree Highlights, Birthday Cuts & 3D Title Reveals</p>
     </div>
     
     <div class="hero-actions">
       <a class="btn-gold" href="tel:+919912610744"><i class="fa-solid fa-phone"></i> Call: 9912610744</a>
-      <a class="btn-outline" href="https://wa.me/919912610744?text=Hi%20Krishna%20Garu,%20I%20have%20video%20editing%20work%20for%20KR%20Video%20Editors." target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+      <a class="btn-outline" href="https://wa.me/919912610744?text=Hi%20Krishna%20Garu,%20I%20have%20an%20editing%20project%20for%20Krishna%20Video%20Editors." target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
     </div>
   </div>
 </div>
 
-<!-- Team Showcase Section (Big Avatar Photos) -->
+<!-- Team Showcase Section -->
 <section id="team" style="background: #080705;">
   <div class="section-head">
     <span>The Masterminds</span>
@@ -621,25 +689,25 @@ footer {
   <div class="team-grid">
     <div class="team-card">
       <div class="avatar-box">
-        <img src="./my-photo1.JPG" alt="B. Krishna Mohan">
+        <img src="my-photo1.JPG" alt="B. Krishna Mohan">
       </div>
       <h3>B. KRISHNA MOHAN</h3>
       <span class="team-role">Chief Video Editor & Mixing Specialist</span>
-      <p>Specializing in 4K multi-camera timeline mixing, speed-ramping, EDIUS project workflows, cinematic color grading, and wedding teasers.</p>
+      <p>Specializing in 4K multi-camera timeline sync, speed-ramping cuts, DaVinci & EDIUS grading, and luxury wedding films.</p>
     </div>
 
     <div class="team-card">
       <div class="avatar-box">
-        <img src="./my-photo2.jpeg" alt="B. Bhavani">
+        <img src="my-photo2.jpeg" alt="B. Bhavani">
       </div>
       <h3>B. BHAVANI</h3>
       <span class="team-role">Creative Director & Studio Management</span>
-      <p>Leading creative storytelling, album framing aesthetics, project timelines, client coordination, and post-production quality assurance.</p>
+      <p>Leading album styling, client relations, project storyboards, aesthetic design flow, and final quality control.</p>
     </div>
   </div>
 </section>
 
-<!-- Edit Suite & Production Gear -->
+<!-- Editing Suite & Mixing Gear -->
 <section id="suite">
   <div class="section-head">
     <span>Studio Engine</span>
@@ -650,48 +718,80 @@ footer {
     <div class="gear-card">
       <div class="gear-icon"><i class="fa-solid fa-sliders"></i></div>
       <h3>Multi-Cam Video Mixing</h3>
-      <p>Specialized in real-time multicam project sync, fast-paced event cutting, and seamless transitions for grand Telugu weddings.</p>
+      <p>Real-time project cutting, rhythm beat sync, seamless multi-angle transitions, and full wedding project delivery.</p>
     </div>
     <div class="gear-card">
       <div class="gear-icon"><i class="fa-solid fa-palette"></i></div>
       <h3>Cinematic Color Grading</h3>
-      <p>Transforming raw camera footage into royal golden tones, punchy haldi yellows, and filmic cinematic color palettes.</p>
+      <p>Transforming raw video logs into royal golden wedding tones, vibrant haldi yellows, and rich cinematic film contrast.</p>
     </div>
     <div class="gear-card">
       <div class="gear-icon"><i class="fa-solid fa-cubes"></i></div>
       <h3>3D Titles & VFX Reveals</h3>
-      <p>Custom 3D logo animation, bride & groom title reveals, invitation teasers, and modern flex typography layouts.</p>
+      <p>Custom 3D logo reveals, Telugu title cards, wedding invitation teasers, and flex print graphics.</p>
     </div>
   </div>
 </section>
 
-<!-- Editing Services Section -->
-<section id="services" style="background: #080705;">
+<!-- Events Portfolio (Half Saree, Birthday, Haldi, Muhurtham with Anime & Cinema Vibe) -->
+<section id="gallery" style="background: #080705;">
   <div class="section-head">
-    <span>Master Craft</span>
-    <h2 class="heading">POST-PRODUCTION SERVICES</h2>
+    <span>Specialized Events Portfolio</span>
+    <h2 class="heading">WEDDING, HALF SAREE, BIRTHDAY & HALDI EDITS</h2>
     <div class="gold-line"></div>
   </div>
-  <div class="services-grid">
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=85" alt="Video Editing">
-      <div class="service-info">
-        <h3>Wedding Film Editing</h3>
-        <p>Full traditional event project cuts, highlights, cinematic trailers, and reel edits.</p>
+  <div class="gallery-grid">
+    <!-- Half Saree Function Edit -->
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=85" alt="Half Saree Ceremony Anime Aesthetic">
+      <div class="gallery-overlay">
+        <h4>Half Saree Ceremony (లంగ వోణి వేడుక)</h4>
+        <span>Traditional Pattu Voni Visuals, Floral Glow & Teaser Edits</span>
       </div>
     </div>
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=85" alt="Teaser Cut">
-      <div class="service-info">
-        <h3>Cinematic Teasers & Reels</h3>
-        <p>Trending Instagram reels, fast-paced beat sync cuts, and 4K ultra-wide teaser edits.</p>
+    
+    <!-- Birthday Celebration Edit -->
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=85" alt="Birthday Celebration Visual Art">
+      <div class="gallery-overlay">
+        <h4>Grand Birthday Celebrations</h4>
+        <span>Vibrant Neon Lighting, Fast Beat Cuts & Anime Aesthetic Effects</span>
       </div>
     </div>
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=85" alt="3D Titles">
-      <div class="service-info">
-        <h3>3D Logo & Title Reveals</h3>
-        <p>Custom motion graphics, name reveal effects, and Telugu wedding invitations.</p>
+
+    <!-- Haldi Ceremony Edit -->
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=85" alt="Haldi Celebration Yellows">
+      <div class="gallery-overlay">
+        <h4>Haldi & Mangala Snanam</h4>
+        <span>Vibrant Gold & Yellow Grading, Water Splash Slow-Mo Cuts</span>
+      </div>
+    </div>
+
+    <!-- Sacred Telugu Wedding Muhurtham -->
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=800&q=85" alt="Sacred Muhurtham Cinema">
+      <div class="gallery-overlay">
+        <h4>Telugu Wedding Muhurtham</h4>
+        <span>Jeelakarra Bellam & Talambralu Cinematic Master Project Cuts</span>
+      </div>
+    </div>
+
+    <!-- Pre-Wedding Shoot Edit -->
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=85" alt="Anime Style Sunset Romance">
+      <div class="gallery-overlay">
+        <h4>Pre-Wedding Love Stories</h4>
+        <span>Golden Hour Sunset Drone Mixing with Filmic Background Scores</span>
+      </div>
+    </div>
+
+    <!-- Grand Reception Highlights -->
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=85" alt="Grand Reception Stage">
+      <div class="gallery-overlay">
+        <h4>Grand Reception Night</h4>
+        <span>Dynamic Sparklers, Grand Stage Multi-Cam & 4K Teaser Highlights</span>
       </div>
     </div>
   </div>
@@ -700,19 +800,19 @@ footer {
 <!-- Contact Section -->
 <section id="contact">
   <div class="section-head">
-    <span>Let's Collaborate</span>
-    <h2 class="heading">CONNECT WITH KR VIDEO EDITORS</h2>
+    <span>Let's Edit Your Story</span>
+    <h2 class="heading">CONNECT WITH KRISHNA VIDEO EDITORS</h2>
     <div class="gold-line"></div>
   </div>
   <div class="contact-card">
-    <h4>KR VIDEO EDITORS</h4>
-    <p style="color:#aaa;font-size:15px;line-height:1.8;">Eluru Road, Opposite Hotel Raj Towers, Vijayawada, Andhra Pradesh.<br>Serving Photographers, Studios & Direct Clients across Vijayawada, Guntur, Tenali & AP.</p>
+    <h4>KR VIDEO EDITORS (Kalki RAM)</h4>
+    <p style="color:#aaa;font-size:15px;line-height:1.8;">Eluru Road, Opposite Hotel Raj Towers, Vijayawada, Andhra Pradesh.<br>Available for Photographers, Studios, Event Organizers & Direct Clients across Vijayawada, Guntur, Tenali & AP/Telangana.</p>
     
     <div class="contact-phone-box">
       <a class="phone-link" href="tel:+919912610744">
         <i class="fa-solid fa-phone"></i> +91 9912610744
       </a>
-      <a class="whatsapp-link" href="https://wa.me/919912610744?text=Hi%20Krishna%20Garu,%20I%20have%20video%20editing%20work%20for%20KR%20Video%20Editors." target="_blank">
+      <a class="whatsapp-link" href="https://wa.me/919912610744?text=Hi%20Krishna%20Garu,%20I%20have%20an%20editing%20project%20for%20Krishna%20Video%20Editors." target="_blank">
         <i class="fa-brands fa-whatsapp"></i> WhatsApp Chat
       </a>
     </div>
@@ -724,12 +824,12 @@ footer {
 </section>
 
 <!-- Floating WhatsApp Button -->
-<a class="whatsapp-float" href="https://wa.me/919912610744?text=Hi%20Krishna%20Garu,%20I%20am%20interested%20in%20KR%20Video%20Editing%20services." target="_blank" title="Chat on WhatsApp">
+<a class="whatsapp-float" href="https://wa.me/919912610744?text=Hi%20Krishna%20Garu,%20I%20am%20interested%20in%20Krishna%20Video%20Editing%20services." target="_blank" title="Chat on WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 
 <footer>
-  © 2026 KR VIDEO EDITORS | Professional Video Mixing, Editing & High-End Post-Production.
+  © 2026 KR VIDEO EDITORS | Kalki RAM | B. Krishna Mohan | Professional Video Mixing & High-End Post-Production.
 </footer>
 
 </body>
